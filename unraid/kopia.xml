@@ -22,9 +22,12 @@
     <WebUI>http://[IP]:[PORT:51515]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/kopia.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/img/kopia.png</Icon>
-    <Date>2023-26-01</Date>
+    <Date>2023-03-21</Date>
     <Changes>
-### 2023-26-01
+### 2023-03-21
+- Add service checks
+
+### 2023-01-26
 - Initial release.
 
     </Changes>
