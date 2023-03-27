@@ -12,10 +12,6 @@
     <Category>Backup: Cloud: Network:Other Productivity: Tools:</Category>
     <GitHub>https://github.com/imagegenius/docker-minio#application-setup</GitHub>
     <ReadMe>https://github.com/imagegenius/docker-minio#readme</ReadMe>
-    <Branch>
-        <Tag>latest</Tag>
-        <TagDescription>Latest MinIO release with an Alpine Base.</TagDescription>
-    </Branch>
     <Project>https://min.io/</Project>
     <Overview>MinIO is a High Performance Object Storage released under GNU Affero General Public License v3.0. It is API compatible with Amazon S3 cloud storage service. Use MinIO to build high performance infrastructure for machine learning, analytics and application data workloads.</Overview>
     <WebUI>http://[IP]:[PORT:9001]</WebUI>
