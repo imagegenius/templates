@@ -37,8 +37,11 @@ You can also use docker-mods to start postgres and redis within the container:
 If you want to use both, set `DOCKER_MODS` to `imagegenius/mods:universal-redis|imagegenius/mods:universal-postgres`.
 See the https://github.com/imagegenius/docker-immich for more information
     </Requires>
-    <Date>2023-04-09</Date>
+    <Date>2023-04-10</Date>
     <Changes>
+### 2023-04-10
+- fix gunicorn
+
 ### 2023-04-09
 - Cache is downloaded to the host (/config/transformers)
 
