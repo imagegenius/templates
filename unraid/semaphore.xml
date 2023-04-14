@@ -12,7 +12,7 @@
     <Category>Cloud: Network:Other Tools:</Category>
     <GitHub>https://github.com/imagegenius/docker-semaphore#application-setup</GitHub>
     <ReadMe>https://github.com/imagegenius/docker-semaphore#readme</ReadMe>
-    <Project>https://www.ansible-semaphore.com/</Project>
+    <Project>https://ansible-semaphore.com/</Project>
     <Overview>Semaphore is a modern UI for Ansible. It lets you easily run Ansible playbooks, get notifications about fails, control access to deployment system.</Overview>
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/semaphore.xml</TemplateURL>
