@@ -18,7 +18,7 @@
     </Branch>
     <Branch>
         <Tag>noml</Tag>
-        <TagDescription>Latest Immich release with an Alpine base. Machine-learning is completly removed, which makes for a very lightweight image.</TagDescription>
+        <TagDescription>Latest Immich release with an Alpine base. Machine-learning is completely removed, which makes for a very lightweight image.</TagDescription>
         <ReadMe>https://github.com/imagegenius/docker-immich/tree/noml#readme</ReadMe>
         <GitHub>https://github.com/imagegenius/docker-immich/tree/noml#application-setup</GitHub>
     </Branch>
@@ -37,8 +37,11 @@ You can also use docker-mods to start postgres and redis within the container:
 If you want to use both, set `DOCKER_MODS` to `imagegenius/mods:universal-redis|imagegenius/mods:universal-postgres`.
 See the https://github.com/imagegenius/docker-immich for more information
     </Requires>
-    <Date>2023-04-10</Date>
+    <Date>2023-04-13</Date>
     <Changes>
+### 2023-04-13
+- add variables to disable typesense and machine learning
+
 ### 2023-04-10
 - fix gunicorn
 
@@ -104,6 +107,8 @@ See the https://github.com/imagegenius/docker-immich for more information
     <Config Name="DB_DATABASE_NAME" Target="DB_DATABASE_NAME" Default="immich" Description="PostgreSQL Database Name" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="REDIS_HOSTNAME" Target="REDIS_HOSTNAME" Default="192.168.1.x" Description="Redis Hostname" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="JWT_SECRET" Target="JWT_SECRET" Default="somelongrandomstring" Description="Run `openssl rand -base64 128`" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="DISABLE_MACHINE_LEANRNING" Target="DISABLE_MACHINE_LEANRNING" Default="false" Description="Set to `true` to disable machine learning" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="DISABLE_TYPESENSE" Target="DISABLE_TYPESENSE" Default="false" Description="Set to `true` to disable Typesense (disables searching completely!)" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="DB_PORT" Target="DB_PORT" Default="5432" Description="PostgreSQL Port" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="REDIS_PORT" Target="REDIS_PORT" Default="6379" Description="Redis Port" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="REDIS_PASSWORD" Target="REDIS_PASSWORD" Default="" Description="Redis password" Type="Variable" Display="always" Required="false" Mask="true"/>
