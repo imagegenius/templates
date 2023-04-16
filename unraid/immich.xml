@@ -45,6 +45,9 @@ See the https://github.com/imagegenius/docker-immich for more information
 ### 2023-04-10
 - fix gunicorn
 
+### 2023-04-04
+- use environment variables to set location of the photos folder
+
 ### 2023-04-09
 - Cache is downloaded to the host (/config/transformers)
 
