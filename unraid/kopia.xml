@@ -39,13 +39,14 @@
 - Initial release.
 
     </Changes>
-    <Config Name="WebUI" Target="51515" Default="51515" Mode="tcp" Description="WebUI Port:" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="WebUI" Target="51515" Default="51515" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Appdata Path" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /source" Target="/source" Default="" Mode="rw" Description="Backup Source Path" Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /cache" Target="/cache" Default="" Mode="rw" Description="Temporary Uploads Path (Cache)" Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /local" Target="/local" Default="" Mode="rw" Description="Path for local filesystem repositories" Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="USERNAME" Target="USERNAME" Default="kopia" Description="Specify a username to access the WebUI" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="PASSWORD" Target="PASSWORD" Default="kopia" Description="Specify the password that you WILL use when creating a repository, this is also the password to access the WebUI" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="KOPIA_PERSIST_CREDENTIALS_ON_CONNECT" Target="KOPIA_PERSIST_CREDENTIALS_ON_CONNECT" Default="true" Description="Automatically connect to repository" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="UID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="GID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="UMASK for newly created files. Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
