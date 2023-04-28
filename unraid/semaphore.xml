@@ -17,8 +17,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/semaphore.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/img/semaphore.png</Icon>
-    <Date>2023-04-14</Date>
+    <Date>2023-04-28</Date>
     <Changes>
+### 2023-04-28
+- Added rsync package.
+
 ### 2023-04-14
 - Initial release.
 
