@@ -17,8 +17,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/ai-chat-app.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/img/ai-chat-app.png</Icon>
-    <Date>2023-03-28</Date>
+    <Date>2023-06-01</Date>
     <Changes>
+### 2023-06-01
+- pin next and next-auth
+
 ### 2023-03-28
 - Add variable checks
 
