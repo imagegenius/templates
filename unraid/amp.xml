@@ -27,8 +27,11 @@
     <ExtraParams>--mac-address=00:00:00:00:00:00</ExtraParams>
     <TemplateURL>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/amp.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/img/amp.png</Icon>
-    <Date>2023-05-28</Date>
+    <Date>2023-06-28</Date>
     <Changes>
+### 2023-06-28
+- add aarch64 support
+
 ### 2023-05-28
 - house keeping
 
