@@ -12,6 +12,16 @@
     <Category>Cloud: Tools:</Category>
     <GitHub>https://github.com/imagegenius/docker-obico#application-setup</GitHub>
     <ReadMe>https://github.com/imagegenius/docker-obico#readme</ReadMe>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Latest obico-server release, only supports CPU for machine learning.</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>cuda</Tag>
+        <TagDescription>Latest obico-server release with support for GPU (CUDA) acceleration.</TagDescription>
+        <ReadMe>https://github.com/imagegenius/docker-obico/tree/cuda#readme</ReadMe>
+        <GitHub>https://github.com/imagegenius/docker-obico/tree/cuda#application-setup</GitHub>
+    </Branch>
     <Project>https://www.obico.io/</Project>
     <Overview>Obico is a community-built, open-source smart 3D printing platform used by makers, enthusiasts, and tinkerers around the world.</Overview>
     <WebUI>http://[IP]:[PORT:3334]</WebUI>
@@ -20,8 +30,11 @@
     <Requires>
 Redis
     </Requires>
-    <Date>2023-03-23</Date>
+    <Date>2023-06-29</Date>
     <Changes>
+### 2023-06-29
+- create seperate cuda branch
+
 ### 2023-03-23
 - add service checks
 
