@@ -33,8 +33,11 @@ This container requires an external application to be run separately.
 You can also use a docker mods to start redis within the container,
 Set `DOCKER_MODS=imagegenius/mods:universal-redis`, and `REDIS_HOSTNAME` to `localhost`.
     </Requires>
-    <Date>2023-07-29</Date>
+    <Date>2023-09-24</Date>
     <Changes>
+### 2023-09-24
+- add vars for ml workers/timeout
+
 ### 2023-07-29
 - remove cuda acceleration for machine-learning
 
@@ -125,6 +128,8 @@ Set `DOCKER_MODS=imagegenius/mods:universal-redis`, and `REDIS_HOSTNAME` to `loc
     <Config Name="DB_PORT" Target="DB_PORT" Default="5432" Description="PostgreSQL Port" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="REDIS_PORT" Target="REDIS_PORT" Default="6379" Description="Redis Port" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="REDIS_PASSWORD" Target="REDIS_PASSWORD" Default="" Description="Redis password" Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="MACHINE_LEARNING_WORKERS" Target="MACHINE_LEARNING_WORKERS" Default="1" Description="Machine learning workers" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="MACHINE_LEARNING_WORKER_TIMEOUT" Target="MACHINE_LEARNING_WORKER_TIMEOUT" Default="120" Description="Machine learning worker timeout" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="UID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
     <Config Name="PGID" Target="PGID" Default="100" Description="GID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="UMASK for newly created files. Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
