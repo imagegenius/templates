@@ -30,8 +30,11 @@
     <Requires>
 Redis
     </Requires>
-    <Date>2023-06-29</Date>
+    <Date>2023-09-29</Date>
     <Changes>
+### 2023-09-29
+- precompile darknet
+
 ### 2023-06-29
 - create seperate cuda branch
 
