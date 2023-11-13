@@ -18,9 +18,15 @@
     </Branch>
     <Branch>
         <Tag>noml</Tag>
-        <TagDescription>Latest Immich release with an Alpine base. Machine-learning and Search with Typesense are completely removed, making it a very lightweight image.</TagDescription>
+        <TagDescription>Latest Immich release with an Ubuntu base. Machine-learning is completely removed.</TagDescription>
         <ReadMe>https://github.com/imagegenius/docker-immich/tree/noml#readme</ReadMe>
         <GitHub>https://github.com/imagegenius/docker-immich/tree/noml#application-setup</GitHub>
+    </Branch>
+    <Branch>
+        <Tag>alpine</Tag>
+        <TagDescription>Latest Immich release with an Alpine base. Machine-learning and Search with Typesense are completely removed, making it a very lightweight image.</TagDescription>
+        <ReadMe>https://github.com/imagegenius/docker-immich/tree/alpine#readme</ReadMe>
+        <GitHub>https://github.com/imagegenius/docker-immich/tree/alpine#application-setup</GitHub>
     </Branch>
     <Project>https://immich.app/</Project>
     <Overview>Immich is a high performance self-hosted photo and video backup solution.</Overview>
@@ -28,7 +34,7 @@
     <TemplateURL>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/immich.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/img/immich.png</Icon>
     <Requires>
-PostgreSQL 14, Redis
+PostgreSQL 15, Redis
 This container requires an external application to be run separately.
 You can also use a docker mods to start redis within the container,
 Set `DOCKER_MODS=imagegenius/mods:universal-redis`, and `REDIS_HOSTNAME` to `localhost`.
