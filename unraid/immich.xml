@@ -33,8 +33,11 @@ This container requires an external application to be run separately.
 You can also use a docker mods to start redis within the container,
 Set `DOCKER_MODS=imagegenius/mods:universal-redis`, and `REDIS_HOSTNAME` to `localhost`.
     </Requires>
-    <Date>2023-09-24</Date>
+    <Date>2023-11-08</Date>
     <Changes>
+### 2023-11-08
+- move to using seperate immich baseimage
+
 ### 2023-09-24
 - house cleaning
 
