@@ -18,7 +18,7 @@
     </Branch>
     <Branch>
         <Tag>noml</Tag>
-        <TagDescription>Latest Immich release with an Ubuntu base. Machine-learning is completely removed.</TagDescription>
+        <TagDescription>Latest Immich release with an Ubuntu base. Machine-learning and Search with Typesense are completely removed, making it still compatible with hardware accelaration.</TagDescription>
         <ReadMe>https://github.com/imagegenius/docker-immich/tree/noml#readme</ReadMe>
         <GitHub>https://github.com/imagegenius/docker-immich/tree/noml#application-setup</GitHub>
     </Branch>
