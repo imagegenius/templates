@@ -18,13 +18,13 @@
     </Branch>
     <Branch>
         <Tag>noml</Tag>
-        <TagDescription>Latest Immich release with an Ubuntu base. Machine-learning and Search with Typesense are completely removed, making it still compatible with hardware accelaration.</TagDescription>
+        <TagDescription>Latest Immich release with an Ubuntu base. Machine-learning is completely removed, making it still compatible with hardware accelaration.</TagDescription>
         <ReadMe>https://github.com/imagegenius/docker-immich/tree/noml#readme</ReadMe>
         <GitHub>https://github.com/imagegenius/docker-immich/tree/noml#application-setup</GitHub>
     </Branch>
     <Branch>
         <Tag>alpine</Tag>
-        <TagDescription>Latest Immich release with an Alpine base. Machine-learning and Search with Typesense are completely removed, making it a very lightweight image.</TagDescription>
+        <TagDescription>Latest Immich release with an Alpine base. Machine-learning is completely removed, making it a very lightweight image (can have issues with RAW images).</TagDescription>
         <ReadMe>https://github.com/imagegenius/docker-immich/tree/alpine#readme</ReadMe>
         <GitHub>https://github.com/imagegenius/docker-immich/tree/alpine#application-setup</GitHub>
     </Branch>
@@ -34,13 +34,16 @@
     <TemplateURL>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/immich.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/img/immich.png</Icon>
     <Requires>
-PostgreSQL 14/15/16, Redis
+PostgreSQL 14/15/16 with [pgvecto.rs](https://github.com/tensorchord/pgvecto.rs), Redis
 This container requires an external application to be run separately.
 You can also use a docker mods to start redis within the container,
 Set `DOCKER_MODS=imagegenius/mods:universal-redis`, and `REDIS_HOSTNAME` to `localhost`.
     </Requires>
-    <Date>2023-11-08</Date>
+    <Date>2023-12-07</Date>
     <Changes>
+### 2023-12-07
+- remove typesense (no longer needed)
+
 ### 2023-11-08
 - move to using seperate immich baseimage
 
@@ -127,17 +130,14 @@ Set `DOCKER_MODS=imagegenius/mods:universal-redis`, and `REDIS_HOSTNAME` to `loc
 
     </Changes>
     <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains machine learning models and typesense data" Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains machine learning models (~1.5GB with default models)" Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Path: /photos" Target="/photos" Default="" Mode="rw" Description="Contains all the photos uploaded to Immich" Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="Path: /config/machine-learning" Target="/config/machine-learning" Default="" Mode="rw" Description="Store the machine learning models (~1.5GB)" Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="Path: /import" Target="/import" Default="" Mode="ro" Description="This folder will be periodically scanned, contents will be automatically imported into Immich" Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="DB_HOSTNAME" Target="DB_HOSTNAME" Default="192.168.1.x" Description="PostgreSQL Host" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_USERNAME" Target="DB_USERNAME" Default="postgres" Description="PostgreSQL Username" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="postgres" Description="PostgreSQL Password" Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="DB_DATABASE_NAME" Target="DB_DATABASE_NAME" Default="immich" Description="PostgreSQL Database Name" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="REDIS_HOSTNAME" Target="REDIS_HOSTNAME" Default="192.168.1.x" Description="Redis Hostname" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="DISABLE_MACHINE_LEARNING" Target="DISABLE_MACHINE_LEARNING" Default="false" Description="Set to `true` to disable machine learning" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="DISABLE_TYPESENSE" Target="DISABLE_TYPESENSE" Default="false" Description="Set to `true` to disable Typesense (disables searching completely!)" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="DB_PORT" Target="DB_PORT" Default="5432" Description="PostgreSQL Port" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="REDIS_PORT" Target="REDIS_PORT" Default="6379" Description="Redis Port" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="REDIS_PASSWORD" Target="REDIS_PASSWORD" Default="" Description="Redis password" Type="Variable" Display="always" Required="false" Mask="true"/>
