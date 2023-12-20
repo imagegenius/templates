@@ -42,6 +42,9 @@ Set `DOCKER_MODS=imagegenius/mods:universal-redis`, and `REDIS_HOSTNAME` to `loc
     <Date>2023-12-07</Date>
     <Changes>
 ### 2023-12-07
+- move to ubuntu mantic
+
+### 2023-12-07
 - remove typesense (no longer needed)
 
 ### 2023-11-08
