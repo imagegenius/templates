@@ -39,16 +39,16 @@ This container requires an external application to be run separately.
 You can also use a docker mods to start redis within the container,
 Set `DOCKER_MODS=imagegenius/mods:universal-redis`, and `REDIS_HOSTNAME` to `localhost`.
     </Requires>
-    <Date>2023-12-07</Date>
+    <Date>2023-12-23</Date>
     <Changes>
+### 2023-12-23
+- move to using seperate immich baseimage
+
 ### 2023-12-07
-- move to ubuntu mantic
+- rebase to ubuntu mantic
 
 ### 2023-12-07
 - remove typesense (no longer needed)
-
-### 2023-11-08
-- move to using seperate immich baseimage
 
 ### 2023-09-24
 - house cleaning
@@ -60,7 +60,7 @@ Set `DOCKER_MODS=imagegenius/mods:universal-redis`, and `REDIS_HOSTNAME` to `loc
 - remove cuda acceleration for machine-learning
 
 ### 2023-05-23
-- move to ubuntu lunar and support cuda acceleration for machine-learning
+- rebase to ubuntu lunar and support cuda acceleration for machine-learning
 
 ### 2023-05-22
 - deprecate postgresql docker mod
