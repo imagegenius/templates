@@ -18,8 +18,11 @@
     <WebUI>http://[IP]:[PORT:51515]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/kopia.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/img/kopia.png</Icon>
-    <Date>2023-04-22</Date>
+    <Date>2024-03-24</Date>
     <Changes>
+### 2024-03-24
+- rebase to alpine edge.
+
 ### 2023-04-22
 - use `htpasswd` file.
 
