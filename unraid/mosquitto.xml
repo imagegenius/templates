@@ -16,8 +16,11 @@
     <Overview>Mosquitto is an open source (EPL/EDL licensed) message broker that implements the MQTT protocol versions 5.0, 3.1.1 and 3.1. Mosquitto is lightweight and is suitable for use on all devices from low power single board computers to full servers.</Overview>
     <TemplateURL>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/mosquitto.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/img/mosquitto.png</Icon>
-    <Date>2023-03-28</Date>
+    <Date>2024-04-24</Date>
     <Changes>
+### 2024-04-24
+- rebase to alpine 3.19
+
 ### 2023-03-28
 - add aarch64 + service checks.
 
