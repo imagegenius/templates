@@ -17,8 +17,11 @@
     <WebUI>http://[IP]:[PORT:9001]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/minio.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/img/minio.png</Icon>
-    <Date>2023-03-21</Date>
+    <Date>2024-04-25</Date>
     <Changes>
+### 2024-04-25
+- rebase to alpine 3.19
+
 ### 2023-03-21
 - Add service checks
 
