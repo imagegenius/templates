@@ -17,8 +17,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/semaphore.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/img/semaphore.png</Icon>
-    <Date>2023-04-28</Date>
+    <Date>2024-04-24</Date>
     <Changes>
+### 2024-04-24
+- rebase to alpine 3.19
+
 ### 2023-04-28
 - Added rsync package.
 
