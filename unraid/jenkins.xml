@@ -21,8 +21,11 @@
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/jenkins.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/img/jenkins.png</Icon>
-    <Date>2023-05-06</Date>
+    <Date>2024-04-24</Date>
     <Changes>
+### 2024-04-24
+- rebase to alpine 3.19
+
 ### 2023-05-06
 - Add CLI variables.
 
