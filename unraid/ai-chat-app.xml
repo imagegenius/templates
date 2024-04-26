@@ -10,6 +10,7 @@
     <Support>https://github.com/imagegenius/docker-ai-chat-app/issues/new/choose</Support>
     <Shell>bash</Shell>
     <Category>Other:</Category>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/imagegenius/docker-ai-chat-app#application-setup</GitHub>
     <ReadMe>https://github.com/imagegenius/docker-ai-chat-app#readme</ReadMe>
     <Project>https://github.com/bitswired/fuseai</Project>
@@ -17,8 +18,11 @@
     <WebUI>http://[IP]:[PORT:3000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/ai-chat-app.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/img/ai-chat-app.png</Icon>
-    <Date>2023-06-01</Date>
+    <Date>2024-04-26</Date>
     <Changes>
+### 2024-04-26
+- Deprecate
+
 ### 2023-06-01
 - pin next and next-auth
 
