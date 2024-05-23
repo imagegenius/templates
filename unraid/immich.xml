@@ -148,6 +148,8 @@ Set `DOCKER_MODS=imagegenius/mods:universal-redis`, and `REDIS_HOSTNAME` to `loc
     <Config Name="REDIS_PORT" Target="REDIS_PORT" Default="6379" Description="Redis Port" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="REDIS_PASSWORD" Target="REDIS_PASSWORD" Default="" Description="Redis password" Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="MACHINE_LEARNING_GPU_ACCELERATION" Target="MACHINE_LEARNING_GPU_ACCELERATION" Default="" Description="Enable cuda acceleration by setting the value to &#39;cuda&#39;" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="MACHINE_LEARNING_HOST" Target="MACHINE_LEARNING_HOST" Default="0.0.0.0" Description="Immich machine-learning host" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="MACHINE_LEARNING_PORT" Target="MACHINE_LEARNING_PORT" Default="3003" Description="Immich machine-learning port" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="MACHINE_LEARNING_WORKERS" Target="MACHINE_LEARNING_WORKERS" Default="1" Description="Machine learning workers" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="MACHINE_LEARNING_WORKER_TIMEOUT" Target="MACHINE_LEARNING_WORKER_TIMEOUT" Default="120" Description="Machine learning worker timeout" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="99" Description="UID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
