@@ -14,19 +14,25 @@
     <ReadMe>https://github.com/imagegenius/docker-immich#readme</ReadMe>
     <Branch>
         <Tag>latest</Tag>
-        <TagDescription>Latest Immich release with an Ubuntu base.</TagDescription>
+        <TagDescription>Latest Immich release.</TagDescription>
     </Branch>
     <Branch>
         <Tag>noml</Tag>
-        <TagDescription>Latest Immich release with an Ubuntu base. Machine-learning is completely removed.</TagDescription>
+        <TagDescription>Latest Immich release. Machine-learning is completely removed.</TagDescription>
         <ReadMe>https://github.com/imagegenius/docker-immich/tree/noml#readme</ReadMe>
         <GitHub>https://github.com/imagegenius/docker-immich/tree/noml#application-setup</GitHub>
     </Branch>
     <Branch>
-        <Tag>alpine</Tag>
-        <TagDescription>Latest Immich release with an Alpine base. Machine-learning is completely removed, making it a very lightweight image (can have issues with RAW images).</TagDescription>
-        <ReadMe>https://github.com/imagegenius/docker-immich/tree/alpine#readme</ReadMe>
-        <GitHub>https://github.com/imagegenius/docker-immich/tree/alpine#application-setup</GitHub>
+        <Tag>cuda</Tag>
+        <TagDescription>Latest Immich release. Machine-learning supports cuda (Nvidia).</TagDescription>
+        <ReadMe>https://github.com/imagegenius/docker-immich/tree/cuda#readme</ReadMe>
+        <GitHub>https://github.com/imagegenius/docker-immich/tree/cuda#application-setup</GitHub>
+    </Branch>
+    <Branch>
+        <Tag>openvino</Tag>
+        <TagDescription>Latest Immich release. Machine-learning supports openvino (Intel).</TagDescription>
+        <ReadMe>https://github.com/imagegenius/docker-immich/tree/openvino#readme</ReadMe>
+        <GitHub>https://github.com/imagegenius/docker-immich/tree/openvino#application-setup</GitHub>
     </Branch>
     <Project>https://immich.app/</Project>
     <Overview>Immich is a high performance self-hosted photo and video backup solution.</Overview>
@@ -147,7 +153,6 @@ Set `DOCKER_MODS=imagegenius/mods:universal-redis`, and `REDIS_HOSTNAME` to `loc
     <Config Name="DB_PORT" Target="DB_PORT" Default="5432" Description="PostgreSQL Port" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="REDIS_PORT" Target="REDIS_PORT" Default="6379" Description="Redis Port" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="REDIS_PASSWORD" Target="REDIS_PASSWORD" Default="" Description="Redis password" Type="Variable" Display="always" Required="false" Mask="true"/>
-    <Config Name="MACHINE_LEARNING_GPU_ACCELERATION" Target="MACHINE_LEARNING_GPU_ACCELERATION" Default="" Description="Enable cuda acceleration by setting the value to &#39;cuda&#39;" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="MACHINE_LEARNING_HOST" Target="MACHINE_LEARNING_HOST" Default="0.0.0.0" Description="Immich machine-learning host" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="MACHINE_LEARNING_PORT" Target="MACHINE_LEARNING_PORT" Default="3003" Description="Immich machine-learning port" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="MACHINE_LEARNING_WORKERS" Target="MACHINE_LEARNING_WORKERS" Default="1" Description="Machine learning workers" Type="Variable" Display="always" Required="false" Mask="false"/>
