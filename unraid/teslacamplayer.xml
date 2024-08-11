@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
+<!-- GENERATED FROM https://github.com/imagegenius/docker-teslacamplayer/blob/main/readme-vars.yml -->
+<Container version="2">
+    <Name>teslacamplayer</Name>
+    <Repository>ghcr.io/imagegenius/teslacamplayer</Repository>
+    <Registry>https://github.com/orgs/imagegenius/packages/container/package/teslacamplayer</Registry>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/imagegenius/docker-teslacamplayer/issues/new/choose</Support>
+    <Shell>bash</Shell>
+    <Category>Other:</Category>
+    <GitHub>https://github.com/imagegenius/docker-teslacamplayer#application-setup</GitHub>
+    <ReadMe>https://github.com/imagegenius/docker-teslacamplayer#readme</ReadMe>
+    <Project>https://github.com/hydazz/TeslaCamPlayer</Project>
+    <Overview>A Blazor WASM application for easily viewing locally stored Tesla sentry and dashcam videos.</Overview>
+    <WebUI>http://[IP]:[PORT:5000]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/teslacamplayer.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/img/default.png</Icon>
+    <Date>2024-08-10</Date>
+    <Changes>
+### 2024-08-10
+- Initial Release.
+
+    </Changes>
+    <Config Name="WebUI" Target="5000" Default="5000" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Appdata Path" Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Path: /media" Target="/media" Default="" Mode="rw" Description="Path to your &#39;TeslaCAM&#39; folder" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="99" Description="UID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="GID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
+    <Config Name="UMASK" Target="UMASK" Default="022" Description="UMASK for newly created files. Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+</Container>
