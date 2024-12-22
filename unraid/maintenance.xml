@@ -10,6 +10,7 @@
     <Support>https://github.com/imagegenius/docker-maintenance/issues/new/choose</Support>
     <Shell>bash</Shell>
     <Category>Other:</Category>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/imagegenius/docker-maintenance#application-setup</GitHub>
     <ReadMe>https://github.com/imagegenius/docker-maintenance#readme</ReadMe>
     <Project>https://imagegenius/docker-maintenance/</Project>
