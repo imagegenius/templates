@@ -10,6 +10,7 @@
     <Support>https://github.com/imagegenius/docker-amp/issues/new/choose</Support>
     <Shell>bash</Shell>
     <Category>Other:</Category>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/imagegenius/docker-amp#application-setup</GitHub>
     <ReadMe>https://github.com/imagegenius/docker-amp#readme</ReadMe>
     <Branch>
