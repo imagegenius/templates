@@ -10,6 +10,7 @@
     <Support>https://github.com/imagegenius/docker-semaphore/issues/new/choose</Support>
     <Shell>bash</Shell>
     <Category>Cloud: Network:Other Tools:</Category>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/imagegenius/docker-semaphore#application-setup</GitHub>
     <ReadMe>https://github.com/imagegenius/docker-semaphore#readme</ReadMe>
     <Project>https://semaphoreui.com/</Project>
