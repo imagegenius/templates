@@ -40,15 +40,18 @@
     <TemplateURL>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/immich.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/img/immich.png</Icon>
     <Requires>
-PostgreSQL 14/15/16 with [pgvecto.rs](https://github.com/tensorchord/pgvecto.rs), Redis
+PostgreSQL 14/15/16/17 with [vectorchord](https://github.com/tensorchord/VectorChord), Redis
 This container requires an external application to be run separately.
 You can also use a docker mods to start redis within the container,
 Set `DOCKER_MODS=imagegenius/mods:universal-redis`, and `REDIS_HOSTNAME` to `localhost`.
     </Requires>
-    <Date>2025-04-04</Date>
+    <Date>2025-05-22</Date>
     <Changes>
+### 2025-05-22
+- change `pgvecto.rs` to `VectorChord`
+
 ### 2025-04-04
-- use &#34;SERVER_PORT&#34; or &#34;MACHINE_LEARNING_PORT&#34; instead of &#34;IMMICH_PORT&#34; and use &#34;SERVER_HOST&#34; or &#34;MACHINE_LEARNING_HOST&#34; instead of &#34;IMMICH_HOST&#34;
+- use `SERVER_PORT` or `MACHINE_LEARNING_PORT` instead of `IMMICH_PORT` and use `SERVER_HOST` or `MACHINE_LEARNING_HOST` instead of `IMMICH_HOST`
 
 ### 2024-01-22
 - support GPU acceleration with CUDA for machine-learning
@@ -152,10 +155,10 @@ Set `DOCKER_MODS=imagegenius/mods:universal-redis`, and `REDIS_HOSTNAME` to `loc
     <Config Name="DB_USERNAME" Target="DB_USERNAME" Default="postgres" Description="PostgreSQL Username" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="postgres" Description="PostgreSQL Password" Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="DB_DATABASE_NAME" Target="DB_DATABASE_NAME" Default="immich" Description="PostgreSQL Database Name" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="REDIS_HOSTNAME" Target="REDIS_HOSTNAME" Default="192.168.1.x" Description="Redis Hostname" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="REDIS_HOSTNAME" Target="REDIS_HOSTNAME" Default="192.168.1.x" Description="Valkey/Redis Hostname" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="DB_PORT" Target="DB_PORT" Default="5432" Description="PostgreSQL Port" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="REDIS_PORT" Target="REDIS_PORT" Default="6379" Description="Redis Port" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="REDIS_PASSWORD" Target="REDIS_PASSWORD" Default="" Description="Redis password" Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="REDIS_PORT" Target="REDIS_PORT" Default="6379" Description="Valkey/Redis Port" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="REDIS_PASSWORD" Target="REDIS_PASSWORD" Default="" Description="Valkey/Redis password" Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="SERVER_HOST" Target="SERVER_HOST" Default="0.0.0.0" Description="Immich server host" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="SERVER_PORT" Target="SERVER_PORT" Default="8080" Description="Immich server port" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="MACHINE_LEARNING_HOST" Target="MACHINE_LEARNING_HOST" Default="0.0.0.0" Description="Immich machine-learning host" Type="Variable" Display="always" Required="false" Mask="false"/>
