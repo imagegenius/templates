@@ -7,3 +7,4 @@ zigbee2mqtt
 teslacamplayer
 jenkins
 minio
+mosquitto

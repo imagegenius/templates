@@ -10,6 +10,7 @@
     <Support>https://github.com/imagegenius/docker-mosquitto/issues/new/choose</Support>
     <Shell>bash</Shell>
     <Category>Other:</Category>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/imagegenius/docker-mosquitto#application-setup</GitHub>
     <ReadMe>https://github.com/imagegenius/docker-mosquitto#readme</ReadMe>
     <Project>https://mosquitto.org/</Project>
