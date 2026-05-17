@@ -10,6 +10,7 @@
     <Support>https://github.com/imagegenius/docker-minio/issues/new/choose</Support>
     <Shell>bash</Shell>
     <Category>Backup: Cloud: Network:Other Productivity: Tools:</Category>
+    <Deprecated>true</Deprecated>
     <GitHub>https://github.com/imagegenius/docker-minio#application-setup</GitHub>
     <ReadMe>https://github.com/imagegenius/docker-minio#readme</ReadMe>
     <Project>https://min.io/</Project>
